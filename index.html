@@ -1,669 +1,931 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="GullyBall - The ultimate cricket scoring, streaming & community app. Track live scores, stream matches, share highlights, and engage with the cricket community.">
-    <meta name="keywords"
-        content="cricket, scoring app, live streaming, gully cricket, cricket highlights, cricket community, match tracking">
-    <meta name="author" content="GullyBall">
-    <title>GullyBall - The Ultimate Cricket Scoring, Streaming & Community App</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="GullyBall - The ultimate cricket scoring, streaming & community app. Track live scores, stream matches, share highlights, and engage with the cricket community."
+    />
+    <meta
+      name="keywords"
+      content="cricket, scoring app, live streaming, gully cricket, cricket highlights, cricket community, match tracking"
+    />
+    <meta name="author" content="GullyBall" />
+    <title>
+      GullyBall - The Ultimate Cricket Scoring, Streaming & Community App
+    </title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
 
-<body>
+  <body>
     <!-- Navigation -->
     <nav class="navbar" id="navbar">
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <img src="images/app_logo.png" alt="GullyBall" class="logo-img">
-                <span class="logo-text">GullyBall</span>
-            </a>
-            <ul class="nav-links" id="navLinks">
-                <li><a href="#features">Features</a></li>
-                <li><a href="#community">Community</a></li>
-                <li><a href="#why-us">Why Us</a></li>
-                <li><a href="#faq">FAQ</a></li>
-            </ul>
-            <div class="nav-buttons">
-                <a href="#download" class="btn btn-primary">Download App</a>
-            </div>
-            <button class="mobile-menu-btn" id="mobileMenuBtn">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
+      <div class="nav-container">
+        <a href="#" class="logo">
+          <img src="images/app_logo.png" alt="GullyBall" class="logo-img" />
+          <span class="logo-text">GullyBall</span>
+        </a>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#features">Features</a></li>
+          <li><a href="#community">Community</a></li>
+          <li><a href="#why-us">Why Us</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+        <div class="nav-buttons">
+          <a href="#download" class="btn btn-primary">Download App</a>
         </div>
+        <button class="mobile-menu-btn" id="mobileMenuBtn">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section class="hero" id="hero">
-        <div class="hero-bg-elements">
-            <div class="floating-ball ball-1"></div>
-            <div class="floating-ball ball-2"></div>
-            <div class="floating-ball ball-3"></div>
-            <div class="hero-gradient"></div>
-        </div>
-        <div class="container hero-content">
-            <div class="hero-text">
-                <div class="hero-badge">
-                    <span class="badge-icon">⚡</span>
-                    <span>AI-Powered Cricket Experience</span>
-                </div>
-                <h1 class="hero-title">
-                    The <span class="gradient-text">Ultimate</span> Cricket Scoring, Streaming & Community App
-                </h1>
-                <p class="hero-description">
-                    Track live scores, stream matches, share AI-generated highlights, and connect with cricket lovers
-                    worldwide. From gully cricket to professional tournaments – GullyBall has you covered!
-                </p>
-                <div class="hero-cta">
-                    <a href="#download" class="btn btn-primary btn-large">
-                        <span>Download Free</span>
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2">
-                            <path d="M5 12h14M12 5l7 7-7 7" />
-                        </svg>
-                    </a>
-                    <a href="#features" class="btn btn-outline btn-large">
-                        <span>Explore Features</span>
-                    </a>
-                </div>
-                <div class="hero-stats">
-                    <div class="stat-item">
-                        <span class="stat-number">10M+</span>
-                        <span class="stat-label">Downloads</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">4.8★</span>
-                        <span class="stat-label">App Rating</span>
-                    </div>
-                    <div class="stat-divider"></div>
-                    <div class="stat-item">
-                        <span class="stat-number">150+</span>
-                        <span class="stat-label">Countries</span>
-                    </div>
-                </div>
+      <div class="hero-bg-elements">
+        <div class="floating-ball ball-1"></div>
+        <div class="floating-ball ball-2"></div>
+        <div class="floating-ball ball-3"></div>
+        <div class="hero-gradient"></div>
+      </div>
+      <div class="container hero-content">
+        <div class="hero-text">
+          <div class="hero-badge">
+            <span class="badge-icon">⚡</span>
+            <span>AI-Powered Cricket Experience</span>
+          </div>
+          <h1 class="hero-title">
+            The <span class="gradient-text">Ultimate</span> Cricket Scoring,
+            Streaming & Community App
+          </h1>
+          <p class="hero-description">
+            Track live scores, stream matches, share AI-generated highlights,
+            and connect with cricket lovers worldwide. From gully cricket to
+            professional tournaments – GullyBall has you covered!
+          </p>
+          <div class="hero-cta">
+            <a href="#download" class="btn btn-primary btn-large">
+              <span>Download Free</span>
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M5 12h14M12 5l7 7-7 7" />
+              </svg>
+            </a>
+            <a href="#features" class="btn btn-outline btn-large">
+              <span>Explore Features</span>
+            </a>
+          </div>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <span class="stat-number">10M+</span>
+              <span class="stat-label">Downloads</span>
             </div>
-            <div class="hero-visual">
-                <div class="phone-mockup">
-                    <div class="phone-frame">
-                        <div class="phone-screen">
-                            <div class="app-preview">
-                                <div class="app-header">
-                                    <span class="live-badge">🔴 LIVE</span>
-                                    <span class="match-title">T20 Finals</span>
-                                </div>
-                                <div class="score-display">
-                                    <div class="team">
-                                        <span class="team-name">Mumbai XI</span>
-                                        <span class="team-score">186/4</span>
-                                    </div>
-                                    <div class="vs">VS</div>
-                                    <div class="team">
-                                        <span class="team-name">Delhi CC</span>
-                                        <span class="team-score">142/6</span>
-                                    </div>
-                                </div>
-                                <div class="match-info">
-                                    <span>Overs: 15.3/20</span>
-                                    <span>CRR: 9.12</span>
-                                </div>
-                                <div class="last-ball">
-                                    <span class="ball six">6</span>
-                                    <span class="ball four">4</span>
-                                    <span class="ball">1</span>
-                                    <span class="ball wicket">W</span>
-                                    <span class="ball">2</span>
-                                    <span class="ball">0</span>
-                                </div>
-                            </div>
-                        </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">4.8★</span>
+              <span class="stat-label">App Rating</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat-item">
+              <span class="stat-number">150+</span>
+              <span class="stat-label">Countries</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="phone-mockup">
+            <div class="phone-frame">
+              <div class="phone-screen">
+                <div class="app-preview">
+                  <div class="app-header">
+                    <span class="live-badge">🔴 LIVE</span>
+                    <span class="match-title">T20 Finals</span>
+                  </div>
+                  <div class="score-display">
+                    <div class="team">
+                      <span class="team-name">Mumbai XI</span>
+                      <span class="team-score">186/4</span>
                     </div>
-                    <div class="phone-glow"></div>
+                    <div class="vs">VS</div>
+                    <div class="team">
+                      <span class="team-name">Delhi CC</span>
+                      <span class="team-score">142/6</span>
+                    </div>
+                  </div>
+                  <div class="match-info">
+                    <span>Overs: 15.3/20</span>
+                    <span>CRR: 9.12</span>
+                  </div>
+                  <div class="last-ball">
+                    <span class="ball six">6</span>
+                    <span class="ball four">4</span>
+                    <span class="ball">1</span>
+                    <span class="ball wicket">W</span>
+                    <span class="ball">2</span>
+                    <span class="ball">0</span>
+                  </div>
                 </div>
+              </div>
             </div>
+            <div class="phone-glow"></div>
+          </div>
         </div>
-        <div class="scroll-indicator">
-            <span>Scroll to explore</span>
-            <div class="mouse">
-                <div class="wheel"></div>
-            </div>
+      </div>
+      <div class="scroll-indicator">
+        <span>Scroll to explore</span>
+        <div class="mouse">
+          <div class="wheel"></div>
         </div>
+      </div>
     </section>
 
     <!-- Features Section -->
     <section class="features" id="features">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Features</span>
-                <h2 class="section-title">Everything You Need for <span class="gradient-text">Cricket Excellence</span>
-                </h2>
-                <p class="section-description">Powerful features designed to enhance your cricket experience, from
-                    scoring to streaming and beyond.</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-card feature-large">
-                    <div class="feature-icon">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <circle cx="12" cy="12" r="10" />
-                            <path d="M12 6v6l4 2" />
-                        </svg>
-                    </div>
-                    <h3>Live Cricket Scoring</h3>
-                    <p>Track every ball with real-time score updates. Ball-by-ball tracking with smart predictions and
-                        suggestions to enhance accuracy. Never miss a moment!</p>
-                    <div class="feature-tags">
-                        <span class="tag">Real-time</span>
-                        <span class="tag">Smart Predictions</span>
-                    </div>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon orange">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M23 7l-7 5 7 5V7z" />
-                            <rect x="1" y="5" width="15" height="14" rx="2" />
-                        </svg>
-                    </div>
-                    <h3>AI Video Highlights</h3>
-                    <p>Automated match highlights and commentary. Capture chaukas, chakkas, wickets, and catches – share
-                        the excitement instantly!</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon purple">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" />
-                            <polyline points="14 2 14 8 20 8" />
-                            <line x1="16" y1="13" x2="8" y2="13" />
-                            <line x1="16" y1="17" x2="8" y2="17" />
-                        </svg>
-                    </div>
-                    <h3>Match Summaries</h3>
-                    <p>Comprehensive AI-generated video summaries with key highlights and insights. Share to social
-                        media instantly!</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon teal">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <rect x="3" y="3" width="18" height="18" rx="2" />
-                            <line x1="3" y1="9" x2="21" y2="9" />
-                            <line x1="9" y1="21" x2="9" y2="9" />
-                        </svg>
-                    </div>
-                    <h3>Customizable Scorecards</h3>
-                    <p>Create personalized scorecards for any format – T20, ODI, Test, or your own gully cricket rules!
-                    </p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon pink">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path
-                                d="M1 1l22 22M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h5a2 2 0 0 1 2 2v9.34" />
-                        </svg>
-                    </div>
-                    <h3>Live Streaming</h3>
-                    <p>Broadcast to YouTube, Facebook Live, or Twitch. Let friends and fans watch your matches in
-                        real-time!</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon green">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <line x1="1" y1="1" x2="23" y2="23" />
-                            <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55" />
-                            <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39" />
-                            <path d="M10.71 5.05A16 16 0 0 1 22.58 9" />
-                            <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88" />
-                            <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
-                            <line x1="12" y1="20" x2="12.01" y2="20" />
-                        </svg>
-                    </div>
-                    <h3>Offline Scoring</h3>
-                    <p>No internet? No problem! Keep scoring offline and sync automatically when you reconnect.</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon yellow">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-                            <circle cx="12" cy="7" r="4" />
-                        </svg>
-                    </div>
-                    <h3>Player Profiles</h3>
-                    <p>Detailed stats, video highlights, and performance history. Track batting, bowling averages, and
-                        milestones!</p>
-                </div>
-
-                <div class="feature-card">
-                    <div class="feature-icon red">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
-                            <path d="M13.73 21a2 2 0 0 1-3.46 0" />
-                        </svg>
-                    </div>
-                    <h3>Match Alerts</h3>
-                    <p>Real-time notifications for wickets, 50s, 100s, and game-changing moments. Stay in the loop!</p>
-                </div>
-
-                <div class="feature-card feature-large">
-                    <div class="feature-icon blue">
-                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
-                        </svg>
-                    </div>
-                    <h3>AI Analytics & Insights</h3>
-                    <p>Gain deep insights on match performance with AI-powered tools. Post-match reports, predictive
-                        analytics, and strategy recommendations to sharpen your game.</p>
-                    <div class="feature-tags">
-                        <span class="tag">AI-Powered</span>
-                        <span class="tag">Strategy</span>
-                        <span class="tag">Reports</span>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Features</span>
+          <h2 class="section-title">
+            Everything You Need for
+            <span class="gradient-text">Cricket Excellence</span>
+          </h2>
+          <p class="section-description">
+            Powerful features designed to enhance your cricket experience, from
+            scoring to streaming and beyond.
+          </p>
         </div>
+
+        <div class="features-grid">
+          <div class="feature-card feature-large">
+            <div class="feature-icon">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <circle cx="12" cy="12" r="10" />
+                <path d="M12 6v6l4 2" />
+              </svg>
+            </div>
+            <h3>Live Cricket Scoring</h3>
+            <p>
+              Track every ball with real-time score updates. Ball-by-ball
+              tracking with smart predictions and suggestions to enhance
+              accuracy. Never miss a moment!
+            </p>
+            <div class="feature-tags">
+              <span class="tag">Real-time</span>
+              <span class="tag">Smart Predictions</span>
+            </div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon orange">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M23 7l-7 5 7 5V7z" />
+                <rect x="1" y="5" width="15" height="14" rx="2" />
+              </svg>
+            </div>
+            <h3>AI Video Highlights</h3>
+            <p>
+              Automated match highlights and commentary. Capture chaukas,
+              chakkas, wickets, and catches – share the excitement instantly!
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon purple">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"
+                />
+                <polyline points="14 2 14 8 20 8" />
+                <line x1="16" y1="13" x2="8" y2="13" />
+                <line x1="16" y1="17" x2="8" y2="17" />
+              </svg>
+            </div>
+            <h3>Match Summaries</h3>
+            <p>
+              Comprehensive AI-generated video summaries with key highlights and
+              insights. Share to social media instantly!
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon teal">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <rect x="3" y="3" width="18" height="18" rx="2" />
+                <line x1="3" y1="9" x2="21" y2="9" />
+                <line x1="9" y1="21" x2="9" y2="9" />
+              </svg>
+            </div>
+            <h3>Customizable Scorecards</h3>
+            <p>
+              Create personalized scorecards for any format – T20, ODI, Test, or
+              your own gully cricket rules!
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon pink">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path
+                  d="M1 1l22 22M21 21H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h3m3-3h6l2 3h5a2 2 0 0 1 2 2v9.34"
+                />
+              </svg>
+            </div>
+            <h3>Live Streaming</h3>
+            <p>
+              Broadcast to YouTube, Facebook Live, or Twitch. Let friends and
+              fans watch your matches in real-time!
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon green">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <line x1="1" y1="1" x2="23" y2="23" />
+                <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55" />
+                <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39" />
+                <path d="M10.71 5.05A16 16 0 0 1 22.58 9" />
+                <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88" />
+                <path d="M8.53 16.11a6 6 0 0 1 6.95 0" />
+                <line x1="12" y1="20" x2="12.01" y2="20" />
+              </svg>
+            </div>
+            <h3>Offline Scoring</h3>
+            <p>
+              No internet? No problem! Keep scoring offline and sync
+              automatically when you reconnect.
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon yellow">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+                <circle cx="12" cy="7" r="4" />
+              </svg>
+            </div>
+            <h3>Player Profiles</h3>
+            <p>
+              Detailed stats, video highlights, and performance history. Track
+              batting, bowling averages, and milestones!
+            </p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon red">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9" />
+                <path d="M13.73 21a2 2 0 0 1-3.46 0" />
+              </svg>
+            </div>
+            <h3>Match Alerts</h3>
+            <p>
+              Real-time notifications for wickets, 50s, 100s, and game-changing
+              moments. Stay in the loop!
+            </p>
+          </div>
+
+          <div class="feature-card feature-large">
+            <div class="feature-icon blue">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12" />
+              </svg>
+            </div>
+            <h3>AI Analytics & Insights</h3>
+            <p>
+              Gain deep insights on match performance with AI-powered tools.
+              Post-match reports, predictive analytics, and strategy
+              recommendations to sharpen your game.
+            </p>
+            <div class="feature-tags">
+              <span class="tag">AI-Powered</span>
+              <span class="tag">Strategy</span>
+              <span class="tag">Reports</span>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Community Section -->
     <section class="community" id="community">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Community</span>
-                <h2 class="section-title">Connect with <span class="gradient-text">Cricket Lovers</span></h2>
-                <p class="section-description">GullyBall isn't just for scoring – it's a platform for building your
-                    cricket community.</p>
-            </div>
-
-            <div class="community-features">
-                <div class="community-card">
-                    <div class="card-visual">
-                        <div class="leaderboard-preview">
-                            <div class="lb-header">🏆 Leaderboard</div>
-                            <div class="lb-item rank-1">
-                                <span class="rank">1</span>
-                                <span class="name">Rohit S.</span>
-                                <span class="points">2,840 pts</span>
-                            </div>
-                            <div class="lb-item rank-2">
-                                <span class="rank">2</span>
-                                <span class="name">Virat K.</span>
-                                <span class="points">2,720 pts</span>
-                            </div>
-                            <div class="lb-item rank-3">
-                                <span class="rank">3</span>
-                                <span class="name">MS Dhoni</span>
-                                <span class="points">2,680 pts</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Public & Private Leaderboards</h3>
-                        <p>Compete with other players and teams on both public and private leaderboards. Track your
-                            progress and see where you stand in your league, city, or globally.</p>
-                    </div>
-                </div>
-
-                <div class="community-card">
-                    <div class="card-visual">
-                        <div class="tournament-preview">
-                            <div class="tp-header">🏆 Summer Cup 2024</div>
-                            <div class="bracket">
-                                <div class="match">
-                                    <span class="team-a">Team Alpha</span>
-                                    <span class="vs-small">vs</span>
-                                    <span class="team-b">Team Beta</span>
-                                </div>
-                                <div class="match">
-                                    <span class="team-a">Thunder XI</span>
-                                    <span class="vs-small">vs</span>
-                                    <span class="team-b">Storm CC</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Tournament Management</h3>
-                        <p>Easily manage local tournaments with scheduling, score tracking, and standings management.
-                            From neighborhood cups to professional leagues!</p>
-                    </div>
-                </div>
-
-                <div class="community-card">
-                    <div class="card-visual">
-                        <div class="social-preview">
-                            <div class="social-icons">
-                                <span class="social-icon instagram">📸</span>
-                                <span class="social-icon twitter">🐦</span>
-                                <span class="social-icon whatsapp">💬</span>
-                            </div>
-                            <div class="share-preview">
-                                <span>Share your victory! 🎉</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Social Media Integration</h3>
-                        <p>Share match results, highlight reels, and achievements directly to Instagram, Twitter,
-                            WhatsApp, and more. Let the world know about your wins!</p>
-                    </div>
-                </div>
-
-                <div class="community-card">
-                    <div class="card-visual">
-                        <div class="voting-preview">
-                            <div class="vote-title">🌟 Man of the Match</div>
-                            <div class="vote-options">
-                                <div class="vote-option selected">
-                                    <span class="player">Rahul D.</span>
-                                    <div class="vote-bar" style="width: 65%">65%</div>
-                                </div>
-                                <div class="vote-option">
-                                    <span class="player">Amit S.</span>
-                                    <div class="vote-bar" style="width: 35%">35%</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card-content">
-                        <h3>Voting & Awards</h3>
-                        <p>Engage audience with post-match voting for Man of the Match, Best Bowler, Best Fielder. Let
-                            followers weigh in and award the best performances!</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Community</span>
+          <h2 class="section-title">
+            Connect with <span class="gradient-text">Cricket Lovers</span>
+          </h2>
+          <p class="section-description">
+            GullyBall isn't just for scoring – it's a platform for building your
+            cricket community.
+          </p>
         </div>
+
+        <div class="community-features">
+          <div class="community-card">
+            <div class="card-visual">
+              <div class="leaderboard-preview">
+                <div class="lb-header">🏆 Leaderboard</div>
+                <div class="lb-item rank-1">
+                  <span class="rank">1</span>
+                  <span class="name">Rohit S.</span>
+                  <span class="points">2,840 pts</span>
+                </div>
+                <div class="lb-item rank-2">
+                  <span class="rank">2</span>
+                  <span class="name">Virat K.</span>
+                  <span class="points">2,720 pts</span>
+                </div>
+                <div class="lb-item rank-3">
+                  <span class="rank">3</span>
+                  <span class="name">MS Dhoni</span>
+                  <span class="points">2,680 pts</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Public & Private Leaderboards</h3>
+              <p>
+                Compete with other players and teams on both public and private
+                leaderboards. Track your progress and see where you stand in
+                your league, city, or globally.
+              </p>
+            </div>
+          </div>
+
+          <div class="community-card">
+            <div class="card-visual">
+              <div class="tournament-preview">
+                <div class="tp-header">🏆 Summer Cup 2024</div>
+                <div class="bracket">
+                  <div class="match">
+                    <span class="team-a">Team Alpha</span>
+                    <span class="vs-small">vs</span>
+                    <span class="team-b">Team Beta</span>
+                  </div>
+                  <div class="match">
+                    <span class="team-a">Thunder XI</span>
+                    <span class="vs-small">vs</span>
+                    <span class="team-b">Storm CC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Tournament Management</h3>
+              <p>
+                Easily manage local tournaments with scheduling, score tracking,
+                and standings management. From neighborhood cups to professional
+                leagues!
+              </p>
+            </div>
+          </div>
+
+          <div class="community-card">
+            <div class="card-visual">
+              <div class="social-preview">
+                <div class="social-icons">
+                  <span class="social-icon instagram">
+                    <img
+                      src="images/social/instagram.png"
+                      alt="Instagram"
+                      class="social-icon"
+                      width="32"
+                      height="32"
+                    />
+                  </span>
+                  <span class="social-icon twitter">
+                    <img
+                      src="images/social/facebook.png"
+                      alt="facebook"
+                      class="social-icon"
+                      width="32"
+                      height="32"
+                    />
+                  </span>
+                  <span class="social-icon whatsapp">
+                    <img
+                      src="images/social/twitter.png"
+                      alt="twitter"
+                      class="social-icon"
+                      width="32"
+                      height="32"
+                    />
+                  </span>
+                </div>
+                <div class="share-preview">
+                  <span>Share your victory! 🎉</span>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Social Media Integration</h3>
+              <p>
+                Share match results, highlight reels, and achievements directly
+                to Instagram, Twitter, WhatsApp, and more. Let the world know
+                about your wins!
+              </p>
+            </div>
+          </div>
+
+          <div class="community-card">
+            <div class="card-visual">
+              <div class="voting-preview">
+                <div class="vote-title">🌟 Man of the Match</div>
+                <div class="vote-options">
+                  <div class="vote-option selected">
+                    <span class="player">Rahul D.</span>
+                    <div class="vote-bar" style="width: 65%">65%</div>
+                  </div>
+                  <div class="vote-option">
+                    <span class="player">Amit S.</span>
+                    <div class="vote-bar" style="width: 35%">35%</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-content">
+              <h3>Voting & Awards</h3>
+              <p>
+                Engage audience with post-match voting for Man of the Match,
+                Best Bowler, Best Fielder. Let followers weigh in and award the
+                best performances!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- What Sets Us Apart -->
     <section class="differentiators" id="why-us">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">Why GullyBall</span>
-                <h2 class="section-title">What Sets <span class="gradient-text">GullyBall</span> Apart</h2>
-            </div>
-
-            <div class="diff-grid">
-                <div class="diff-card">
-                    <div class="diff-icon">🧠</div>
-                    <h3>AI-Powered Insights</h3>
-                    <p>Smart scoring suggestions, match predictions, and post-game analysis. Fine-tune your batting
-                        technique or team strategy with AI-driven tools.</p>
-                </div>
-
-                <div class="diff-card">
-                    <div class="diff-icon">📴</div>
-                    <h3>Offline Scoring</h3>
-                    <p>Record every ball when the network is down. Everything syncs seamlessly once you're back online.
-                        Never miss a stat!</p>
-                </div>
-
-                <div class="diff-card">
-                    <div class="diff-icon">🛒</div>
-                    <h3>Cricket Gear Store</h3>
-                    <p>Order team jerseys, cricket gear, and personalized merchandise. Customize your equipment and get
-                        it delivered to your doorstep!</p>
-                </div>
-
-                <div class="diff-card highlight">
-                    <div class="diff-icon">🌍</div>
-                    <h3>Trusted Worldwide</h3>
-                    <p>Backed by cricket lovers and professional players alike. Join millions from around the world who
-                        trust GullyBall for their cricket needs.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">Why GullyBall</span>
+          <h2 class="section-title">
+            What Sets <span class="gradient-text">GullyBall</span> Apart
+          </h2>
         </div>
+
+        <div class="diff-grid">
+          <div class="diff-card">
+            <div class="diff-icon">🧠</div>
+            <h3>AI-Powered Insights</h3>
+            <p>
+              Smart scoring suggestions, match predictions, and post-game
+              analysis. Fine-tune your batting technique or team strategy with
+              AI-driven tools.
+            </p>
+          </div>
+
+          <div class="diff-card">
+            <div class="diff-icon">📴</div>
+            <h3>Offline Scoring</h3>
+            <p>
+              Record every ball when the network is down. Everything syncs
+              seamlessly once you're back online. Never miss a stat!
+            </p>
+          </div>
+
+          <div class="diff-card highlight">
+            <div class="diff-icon">🌍</div>
+            <h3>Trusted Worldwide</h3>
+            <p>
+              Backed by cricket lovers and professional players alike. Join
+              millions from around the world who trust GullyBall for their
+              cricket needs.
+            </p>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Why Choose Section -->
     <section class="why-choose">
-        <div class="container">
-            <div class="why-choose-content">
-                <div class="why-text">
-                    <span class="section-tag">For Players</span>
-                    <h2 class="section-title">Why Cricket Players <span class="gradient-text">Choose GullyBall</span>
-                    </h2>
-                    <ul class="benefits-list">
-                        <li>
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <strong>Automated Video Highlights & Summaries</strong>
-                                <p>Relive every key moment with AI-generated video summaries and commentary.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <strong>Easy-to-Use Interface</strong>
-                                <p>Intuitive design makes scoring simple for users of all experience levels.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <strong>Live Streaming & Sharing</strong>
-                                <p>Stream matches live and share key moments with friends, family, and fans.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <strong>Comprehensive Player Stats</strong>
-                                <p>Track runs, wickets, centuries, and more in complete detail.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <span class="check-icon">✓</span>
-                            <div>
-                                <strong>AI Tools for Better Play</strong>
-                                <p>Get match insights, reports, and predictive analytics to sharpen your game.</p>
-                            </div>
-                        </li>
-                    </ul>
+      <div class="container">
+        <div class="why-choose-content">
+          <div class="why-text">
+            <span class="section-tag">For Players</span>
+            <h2 class="section-title">
+              Why Cricket Players
+              <span class="gradient-text">Choose GullyBall</span>
+            </h2>
+            <ul class="benefits-list">
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Automated Video Highlights & Summaries</strong>
+                  <p>
+                    Relive every key moment with AI-generated video summaries
+                    and commentary.
+                  </p>
                 </div>
-                <div class="supported-devices">
-                    <h3>Supported Devices</h3>
-                    <div class="device-cards">
-                        <div class="device-card">
-                            <span class="device-icon">🤖</span>
-                            <strong>Android</strong>
-                            <span>Android 5.0+</span>
-                        </div>
-                        <div class="device-card">
-                            <span class="device-icon">🍎</span>
-                            <strong>iOS</strong>
-                            <span>iOS 11.0+</span>
-                        </div>
-                    </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Easy-to-Use Interface</strong>
+                  <p>
+                    Intuitive design makes scoring simple for users of all
+                    experience levels.
+                  </p>
                 </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Live Streaming & Sharing</strong>
+                  <p>
+                    Stream matches live and share key moments with friends,
+                    family, and fans.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>Comprehensive Player Stats</strong>
+                  <p>
+                    Track runs, wickets, centuries, and more in complete detail.
+                  </p>
+                </div>
+              </li>
+              <li>
+                <span class="check-icon">✓</span>
+                <div>
+                  <strong>AI Tools for Better Play</strong>
+                  <p>
+                    Get match insights, reports, and predictive analytics to
+                    sharpen your game.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="supported-devices">
+            <h3>Supported Devices</h3>
+            <div class="device-cards">
+              <div class="device-card">
+                <span class="device-icon">
+                  <img
+                    src="images/android.png"
+                    alt="Instagram"
+                    class="social-icon"
+                    width="32"
+                    height="32"
+                  />
+                </span>
+                <strong>Android</strong>
+                <span>Android 5.0+</span>
+              </div>
+              <div class="device-card">
+                <span class="device-icon">
+                  <img
+                    src="images/apple.png"
+                    alt="Instagram"
+                    class="social-icon"
+                    width="32"
+                    height="32"
+                  />
+                </span>
+                <strong>iOS</strong>
+                <span>iOS 11.0+</span>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- Download Section -->
     <section class="download" id="download">
-        <div class="download-bg">
-            <div class="download-pattern"></div>
+      <div class="download-bg">
+        <div class="download-pattern"></div>
+      </div>
+      <div class="container">
+        <div class="download-content">
+          <h2>Download <span class="gradient-text">GullyBall</span> Today</h2>
+          <p>
+            Ready to take your cricket game to the next level? Start scoring,
+            streaming, and sharing your cricket journey now!
+          </p>
+          <div class="download-buttons">
+            <a
+              href="https://apps.apple.com/in/app/gullyball-live-cricket-scorer/id6608972577"
+              class="store-btn"
+            >
+              <img
+                src="images/appstore.png"
+                alt="Download on App Store"
+                class="store-badge"
+              />
+            </a>
+            <a
+              href="https://play.google.com/store/apps/details?id=com.myysports.gully6&pcampaignid=web_share"
+              class="store-btn"
+            >
+              <img
+                src="images/playstore.png"
+                alt="Get it on Google Play"
+                class="store-badge"
+              />
+            </a>
+          </div>
+          <div class="download-features">
+            <span>✓ Free Download</span>
+            <span>✓ No Ads</span>
+            <span>✓ Premium Features</span>
+          </div>
         </div>
-        <div class="container">
-            <div class="download-content">
-                <h2>Download <span class="gradient-text">GullyBall</span> Today</h2>
-                <p>Ready to take your cricket game to the next level? Start scoring, streaming, and sharing your cricket
-                    journey now!</p>
-                <div class="download-buttons">
-                    <a href="#" class="store-btn">
-                        <img src="images/appstore.png" alt="Download on App Store" class="store-badge">
-                    </a>
-                    <a href="#" class="store-btn">
-                        <img src="images/playstore.png" alt="Get it on Google Play" class="store-badge">
-                    </a>
-                </div>
-                <div class="download-features">
-                    <span>✓ Free Download</span>
-                    <span>✓ No Ads</span>
-                    <span>✓ Premium Features</span>
-                </div>
-            </div>
-        </div>
+      </div>
     </section>
 
     <!-- FAQ Section -->
     <section class="faq" id="faq">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-tag">FAQ</span>
-                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
-            </div>
-
-            <div class="faq-grid">
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Is GullyBall free to use?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! GullyBall is free to download and use, with optional premium features available for
-                            those who want to enhance their experience.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Can I score matches offline?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Absolutely! GullyBall offers offline scoring so you can keep track of your match even without
-                            internet access. Your scores will sync automatically once you're back online.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>How do I live stream a match with GullyBall?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>You can stream your match live to platforms like YouTube, Facebook Live with just a few taps.
-                            GullyBall integrates with these platforms to make broadcasting your match simple and
-                            seamless.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Does GullyBall provide automated video highlights?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! GullyBall automatically generates AI-powered video highlights and match summaries based
-                            on key moments like wickets, boundaries, and game-changing performances. You can also share
-                            these summaries with friends and followers instantly.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Can I customize scorecards?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes, GullyBall lets you create and customize scorecards for different match types—whether
-                            it's T20, ODI, Test, or even your own local rules for gully cricket.</p>
-                    </div>
-                </div>
-
-                <div class="faq-item">
-                    <button class="faq-question" onclick="toggleFaq(this)">
-                        <span>Does GullyBall support regional languages?</span>
-                        <svg class="faq-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <polyline points="6 9 12 15 18 9" />
-                        </svg>
-                    </button>
-                    <div class="faq-answer">
-                        <p>Yes! GullyBall is available in English, Hindi, Tamil, Bengali, and more regional languages,
-                            with additional languages coming soon.</p>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">FAQ</span>
+          <h2 class="section-title">
+            Frequently Asked <span class="gradient-text">Questions</span>
+          </h2>
         </div>
+
+        <div class="faq-grid">
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Is GullyBall free to use?</span>
+              <svg
+                class="faq-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! GullyBall is free to download and use, with optional
+                premium features available for those who want to enhance their
+                experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I score matches offline?</span>
+              <svg
+                class="faq-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Absolutely! GullyBall offers offline scoring so you can keep
+                track of your match even without internet access. Your scores
+                will sync automatically once you're back online.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>How do I live stream a match with GullyBall?</span>
+              <svg
+                class="faq-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                You can stream your match live to platforms like YouTube,
+                Facebook Live with just a few taps. GullyBall integrates with
+                these platforms to make broadcasting your match simple and
+                seamless.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Does GullyBall provide automated video highlights?</span>
+              <svg
+                class="faq-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! GullyBall automatically generates AI-powered video
+                highlights and match summaries based on key moments like
+                wickets, boundaries, and game-changing performances. You can
+                also share these summaries with friends and followers instantly.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Can I customize scorecards?</span>
+              <svg
+                class="faq-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes, GullyBall lets you create and customize scorecards for
+                different match types—whether it's T20, ODI, Test, or even your
+                own local rules for gully cricket.
+              </p>
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <button class="faq-question" onclick="toggleFaq(this)">
+              <span>Does GullyBall support regional languages?</span>
+              <svg
+                class="faq-icon"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+              >
+                <polyline points="6 9 12 15 18 9" />
+              </svg>
+            </button>
+            <div class="faq-answer">
+              <p>
+                Yes! GullyBall is available in English, Hindi, Tamil, Bengali,
+                and more regional languages, with additional languages coming
+                soon.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">
-                    <a href="#" class="logo">
-                        <img src="images/app_logo.png" alt="GullyBall" class="logo-img">
-                        <span class="logo-text">GullyBall</span>
-                    </a>
-                    <p>The ultimate cricket scoring, streaming & community app for cricket enthusiasts worldwide.</p>
-                    <div class="social-links">
-                        <a href="https://instagram.com/" class="social-link" target="_blank" rel="noopener" aria-label="Instagram">
-                            <img src="images/social/instagram.svg" alt="Instagram" class="social-icon" width="32" height="32" />
-                        </a>
-                        <a href="https://facebook.com/" class="social-link" target="_blank" rel="noopener" aria-label="Facebook">
-                            <img src="images/social/facebook.svg" alt="Facebook" class="social-icon" width="32" height="32" />
-                        </a>
-                        <a href="#" class="social-link" aria-label="Twitter">🐦</a>
-                        <a href="#" class="social-link" aria-label="YouTube">▶️</a>
-                    </div>
-                </div>
-
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Product</h4>
-                        <a href="#features">Features</a>
-                        <a href="#community">Community</a>
-                        <a href="#download">Download</a>
-                        <a href="#">Pricing</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Support</h4>
-                        <a href="#faq">FAQ</a>
-                        <a href="#">Help Center</a>
-                        <a href="#">Contact Us</a>
-                        <a href="#">Feedback</a>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Legal</h4>
-                        <a href="#">Privacy Policy</a>
-                        <a href="#">Terms of Service</a>
-                        <a href="#">Cookie Policy</a>
-                    </div>
-                </div>
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#" class="logo">
+              <img src="images/app_logo.png" alt="GullyBall" class="logo-img" />
+              <span class="logo-text">GullyBall</span>
+            </a>
+            <p>
+              The ultimate cricket scoring, streaming & community app for
+              cricket enthusiasts worldwide.
+            </p>
+            <div class="social-links">
+              <a
+                href="https://www.instagram.com/gully_ball"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Instagram"
+              >
+                <img
+                  src="images/social/instagram.png"
+                  alt="Instagram"
+                  class="social-icon"
+                  width="32"
+                  height="32"
+                />
+              </a>
+              <a
+                href="https://www.facebook.com/GullyBallapp"
+                class="social-link"
+                target="_blank"
+                rel="noopener"
+                aria-label="Facebook"
+              >
+                <img
+                  src="images/social/facebook.png"
+                  alt="Facebook"
+                  class="social-icon"
+                  width="32"
+                  height="32"
+                />
+              </a>
             </div>
+          </div>
 
-            <div class="footer-bottom">
-                <p>© 2024 GullyBall. All rights reserved. Made with ❤️ for cricket lovers.</p>
+          <div class="footer-links">
+            <div class="footer-column">
+              <h4>Product</h4>
+              <a href="#features">Features</a>
+              <a href="#community">Community</a>
+              <a href="#download">Download</a>
+              <a href="#">Pricing</a>
             </div>
+            <div class="footer-column">
+              <h4>Support</h4>
+              <a href="#faq">FAQ</a>
+              <a href="#">Help Center</a>
+              <a href="#">Contact Us</a>
+              <a href="#">Feedback</a>
+            </div>
+            <div class="footer-column">
+              <h4>Legal</h4>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Cookie Policy</a>
+            </div>
+          </div>
         </div>
+
+        <div class="footer-bottom">
+          <p>
+            © 2024 GullyBall. All rights reserved. Made with ❤️ for cricket
+            lovers.
+          </p>
+        </div>
+      </div>
     </footer>
 
     <script src="script.js"></script>
-</body>
-
+  </body>
 </html>
